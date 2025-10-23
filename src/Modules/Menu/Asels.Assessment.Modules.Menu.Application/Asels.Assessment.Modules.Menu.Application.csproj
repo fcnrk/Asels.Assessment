@@ -7,9 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Commands\" />
-      <Folder Include="Interfaces\" />
-      <Folder Include="Queries\" />
+      <ProjectReference Include="..\Asels.Assessment.Modules.Menu.Domain\Asels.Assessment.Modules.Menu.Domain.csproj" />
     </ItemGroup>
 
 </Project>
