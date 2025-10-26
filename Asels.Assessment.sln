@@ -11,19 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform", "Platform", "{25
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{EFF3BD99-1E48-4267-99F7-3A9B4F5E40A1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Menu", "Menu", "{C01AB6C3-EB3D-4CFC-BADC-A643CB6B106B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Menus", "Menus", "{C01AB6C3-EB3D-4CFC-BADC-A643CB6B106B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders", "Orders", "{7CAF9FE2-0172-4343-B357-9A0885D81C43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menu.Api", "src\Modules\Menu\Asels.Assessment.Modules.Menu.Api\Asels.Assessment.Modules.Menu.Api.csproj", "{D40AB0E4-8F51-4816-9606-7F105756C30A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menus.Api", "src\Modules\Menus\Asels.Assessment.Modules.Menus.Api\Asels.Assessment.Modules.Menus.Api.csproj", "{D40AB0E4-8F51-4816-9606-7F105756C30A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menu.Application", "src\Modules\Menu\Asels.Assessment.Modules.Menu.Application\Asels.Assessment.Modules.Menu.Application.csproj", "{7DCF2F3A-63EA-441A-99BB-A067589B2047}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menus.Application", "src\Modules\Menus\Asels.Assessment.Modules.Menus.Application\Asels.Assessment.Modules.Menus.Application.csproj", "{7DCF2F3A-63EA-441A-99BB-A067589B2047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menu.Contracts", "src\Modules\Menu\Asels.Assessment.Modules.Menu.Contracts\Asels.Assessment.Modules.Menu.Contracts.csproj", "{1E4B8284-84CE-411A-A809-93D1CE8D6B25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menus.Contracts", "src\Modules\Menus\Asels.Assessment.Modules.Menus.Contracts\Asels.Assessment.Modules.Menus.Contracts.csproj", "{1E4B8284-84CE-411A-A809-93D1CE8D6B25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menu.Domain", "src\Modules\Menu\Asels.Assessment.Modules.Menu.Domain\Asels.Assessment.Modules.Menu.Domain.csproj", "{8A44C16A-F2B5-4CB9-AB90-396F311AD0D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menus.Domain", "src\Modules\Menus\Asels.Assessment.Modules.Menus.Domain\Asels.Assessment.Modules.Menus.Domain.csproj", "{8A44C16A-F2B5-4CB9-AB90-396F311AD0D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menu.Infrastructure", "src\Modules\Menu\Asels.Assessment.Modules.Menu.Infrastructure\Asels.Assessment.Modules.Menu.Infrastructure.csproj", "{2D70DCEC-6A5A-4E06-A0B2-5BB7F1179F61}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menus.Infrastructure", "src\Modules\Menus\Asels.Assessment.Modules.Menus.Infrastructure\Asels.Assessment.Modules.Menus.Infrastructure.csproj", "{2D70DCEC-6A5A-4E06-A0B2-5BB7F1179F61}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Orders.Api", "src\Modules\Orders\Asels.Assessment.Modules.Orders.Api\Asels.Assessment.Modules.Orders.Api.csproj", "{042C8D03-FE15-419C-AA51-1334D542AE8A}"
 EndProject
@@ -39,7 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BC1BB1EF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D9D6485C-518D-47E0-8491-136ADBDB916A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Menu", "Menu", "{38949CC5-4976-4904-BC5C-DE3DFA132758}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Menus", "Menus", "{38949CC5-4976-4904-BC5C-DE3DFA132758}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders", "Orders", "{4AD1F1DA-5BCE-4300-8FF2-06BBDD4CDE7C}"
 EndProject
@@ -47,15 +47,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform", "Platform", "{83
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Tests.Common", "tests\Common\Asels.Assessment.Tests.Common\Asels.Assessment.Tests.Common.csproj", "{A65D89D1-9E79-4788-B2DB-0DF0674A0FAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menu.UnitTests", "tests\Menu\Asels.Assessment.Modules.Menu.UnitTests\Asels.Assessment.Modules.Menu.UnitTests.csproj", "{07021A2B-FC7F-4C8E-967E-C8A7E41322F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menus.UnitTests", "tests\Menus\Asels.Assessment.Modules.Menus.UnitTests\Asels.Assessment.Modules.Menus.UnitTests.csproj", "{07021A2B-FC7F-4C8E-967E-C8A7E41322F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Orders.UnitTests", "tests\Orders\Asels.Assessment.Modules.Orders.UnitTests\Asels.Assessment.Modules.Orders.UnitTests.csproj", "{C7A9A7E8-C940-425A-9FDF-07A10EA6F398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menu.IntegrationTests", "tests\Menu\Asels.Assessment.Modules.Menu.IntegrationTests\Asels.Assessment.Modules.Menu.IntegrationTests.csproj", "{374A6A81-7259-44B2-9070-0B77AA8C0E58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Menus.IntegrationTests", "tests\Menus\Asels.Assessment.Modules.Menus.IntegrationTests\Asels.Assessment.Modules.Menus.IntegrationTests.csproj", "{374A6A81-7259-44B2-9070-0B77AA8C0E58}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Orders.IntegrationTests", "tests\Orders\Asels.Assessment.Modules.Orders.IntegrationTests\Asels.Assessment.Modules.Orders.IntegrationTests.csproj", "{9F82DCF5-464E-49D7-8C63-50146DEBA49E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Platform.WebApi.IntegrationTests", "tests\Platform\Asels.Assessment.Platform.WebApi.IntegrationTests\Asels.Assessment.Platform.WebApi.IntegrationTests.csproj", "{62B1F5DE-872C-4925-A62F-1ED279130F45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Venues", "Venues", "{F74892F9-EFE9-445D-A92D-F04B8F909E83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Venues.Api", "src\Modules\Venues\Asels.Assessment.Modules.Venues.Api\Asels.Assessment.Modules.Venues.Api.csproj", "{222EEBF7-B5C7-4880-84C6-AE9E5574A209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Venues.Application", "src\Modules\Venues\Asels.Assessment.Modules.Venues.Application\Asels.Assessment.Modules.Venues.Application.csproj", "{282C5DE5-1A4F-4BBA-944E-4942A444FEB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Venues.Contracts", "src\Modules\Venues\Asels.Assessment.Modules.Venues.Contracts\Asels.Assessment.Modules.Venues.Contracts.csproj", "{E8887ED1-FE93-4BB9-8D56-D27E64B1B0DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Venues.Domain", "src\Modules\Venues\Asels.Assessment.Modules.Venues.Domain\Asels.Assessment.Modules.Venues.Domain.csproj", "{650917AA-FA0B-4D99-8C45-17887BA84D9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Venues.Infrastructure", "src\Modules\Venues\Asels.Assessment.Modules.Venues.Infrastructure\Asels.Assessment.Modules.Venues.Infrastructure.csproj", "{8D124D6F-FD6F-4ED0-851F-BB9248ADB33F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Venues", "Venues", "{9A138824-1C81-4524-84E0-B1FD1DBD0434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Venues.UnitTests", "tests\Venues\Asels.Assessment.Modules.Venues.UnitTests\Asels.Assessment.Modules.Venues.UnitTests.csproj", "{96263B2B-C0B2-4C1B-BCF3-FB63540730AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asels.Assessment.Modules.Venues.IntegrationTests", "tests\Venues\Asels.Assessment.Modules.Venues.IntegrationTests\Asels.Assessment.Modules.Venues.IntegrationTests.csproj", "{7C2ECF6F-ABDE-4EC9-B491-E4AD848F347B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +149,34 @@ Global
 		{62B1F5DE-872C-4925-A62F-1ED279130F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62B1F5DE-872C-4925-A62F-1ED279130F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62B1F5DE-872C-4925-A62F-1ED279130F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{222EEBF7-B5C7-4880-84C6-AE9E5574A209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{222EEBF7-B5C7-4880-84C6-AE9E5574A209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{222EEBF7-B5C7-4880-84C6-AE9E5574A209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{222EEBF7-B5C7-4880-84C6-AE9E5574A209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{282C5DE5-1A4F-4BBA-944E-4942A444FEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282C5DE5-1A4F-4BBA-944E-4942A444FEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282C5DE5-1A4F-4BBA-944E-4942A444FEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282C5DE5-1A4F-4BBA-944E-4942A444FEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8887ED1-FE93-4BB9-8D56-D27E64B1B0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8887ED1-FE93-4BB9-8D56-D27E64B1B0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8887ED1-FE93-4BB9-8D56-D27E64B1B0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8887ED1-FE93-4BB9-8D56-D27E64B1B0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{650917AA-FA0B-4D99-8C45-17887BA84D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650917AA-FA0B-4D99-8C45-17887BA84D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650917AA-FA0B-4D99-8C45-17887BA84D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650917AA-FA0B-4D99-8C45-17887BA84D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D124D6F-FD6F-4ED0-851F-BB9248ADB33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D124D6F-FD6F-4ED0-851F-BB9248ADB33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D124D6F-FD6F-4ED0-851F-BB9248ADB33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D124D6F-FD6F-4ED0-851F-BB9248ADB33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96263B2B-C0B2-4C1B-BCF3-FB63540730AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96263B2B-C0B2-4C1B-BCF3-FB63540730AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96263B2B-C0B2-4C1B-BCF3-FB63540730AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96263B2B-C0B2-4C1B-BCF3-FB63540730AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C2ECF6F-ABDE-4EC9-B491-E4AD848F347B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2ECF6F-ABDE-4EC9-B491-E4AD848F347B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2ECF6F-ABDE-4EC9-B491-E4AD848F347B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2ECF6F-ABDE-4EC9-B491-E4AD848F347B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -161,5 +207,14 @@ Global
 		{374A6A81-7259-44B2-9070-0B77AA8C0E58} = {38949CC5-4976-4904-BC5C-DE3DFA132758}
 		{9F82DCF5-464E-49D7-8C63-50146DEBA49E} = {4AD1F1DA-5BCE-4300-8FF2-06BBDD4CDE7C}
 		{62B1F5DE-872C-4925-A62F-1ED279130F45} = {839200B6-FADE-4975-8E43-4196E36DE465}
+		{F74892F9-EFE9-445D-A92D-F04B8F909E83} = {EFF3BD99-1E48-4267-99F7-3A9B4F5E40A1}
+		{222EEBF7-B5C7-4880-84C6-AE9E5574A209} = {F74892F9-EFE9-445D-A92D-F04B8F909E83}
+		{282C5DE5-1A4F-4BBA-944E-4942A444FEB0} = {F74892F9-EFE9-445D-A92D-F04B8F909E83}
+		{E8887ED1-FE93-4BB9-8D56-D27E64B1B0DB} = {F74892F9-EFE9-445D-A92D-F04B8F909E83}
+		{650917AA-FA0B-4D99-8C45-17887BA84D9E} = {F74892F9-EFE9-445D-A92D-F04B8F909E83}
+		{8D124D6F-FD6F-4ED0-851F-BB9248ADB33F} = {F74892F9-EFE9-445D-A92D-F04B8F909E83}
+		{9A138824-1C81-4524-84E0-B1FD1DBD0434} = {BC1BB1EF-047C-4A31-ABA8-7C1814AD1285}
+		{96263B2B-C0B2-4C1B-BCF3-FB63540730AA} = {9A138824-1C81-4524-84E0-B1FD1DBD0434}
+		{7C2ECF6F-ABDE-4EC9-B491-E4AD848F347B} = {9A138824-1C81-4524-84E0-B1FD1DBD0434}
 	EndGlobalSection
 EndGlobal

@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Persistence\" />
       <Folder Include="Repositories\" />
       <Folder Include="Services\" />
       <Folder Include="Utils\" />
@@ -15,6 +14,10 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Asels.Assessment.Modules.Venues.Domain\Asels.Assessment.Modules.Venues.Domain.csproj" />
     </ItemGroup>
 
 </Project>

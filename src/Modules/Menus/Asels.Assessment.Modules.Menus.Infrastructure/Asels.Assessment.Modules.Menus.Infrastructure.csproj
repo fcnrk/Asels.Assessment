@@ -7,14 +7,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Persistence\" />
-      <Folder Include="Repositories\" />
       <Folder Include="Services\" />
       <Folder Include="Utils\" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Asels.Assessment.Modules.Menus.Application\Asels.Assessment.Modules.Menus.Application.csproj" />
+      <ProjectReference Include="..\Asels.Assessment.Modules.Menus.Domain\Asels.Assessment.Modules.Menus.Domain.csproj" />
     </ItemGroup>
 
 </Project>
