@@ -10,7 +10,7 @@ namespace Asels.Assessment.Modules.Menus.UnitTests;
 public class UpsertMenuHandlerTests
 {
     [Fact]
-    public async Task UpsertMenu__And_Return_Details()
+    public async Task UpsertMenu_And_Return_Details()
     {
         var venueId = Guid.NewGuid();
         var day = DayOfWeek.Monday;

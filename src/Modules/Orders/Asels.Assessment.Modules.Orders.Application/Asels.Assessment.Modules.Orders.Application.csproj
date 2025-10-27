@@ -7,7 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Menus\Asels.Assessment.Modules.Menus.Contracts\Asels.Assessment.Modules.Menus.Contracts.csproj" />
+      <ProjectReference Include="..\Asels.Assessment.Modules.Orders.Contracts\Asels.Assessment.Modules.Orders.Contracts.csproj" />
       <ProjectReference Include="..\Asels.Assessment.Modules.Orders.Domain\Asels.Assessment.Modules.Orders.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="13.1.0" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.10" />
     </ItemGroup>
 
 </Project>

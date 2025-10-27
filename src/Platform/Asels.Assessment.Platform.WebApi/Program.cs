@@ -1,6 +1,8 @@
 using Asels.Assessment.Modules.Menus.Api;
 using Asels.Assessment.Modules.Menus.Infrastructure.Persistence;
 using Asels.Assessment.Modules.Menus.Infrastructure.Utils;
+using Asels.Assessment.Modules.Orders.Api;
+using Asels.Assessment.Modules.Orders.Infrastructure.Utils;
 using Asels.Assessment.Modules.Venues.Api;
 using Asels.Assessment.Modules.Venues.Infrastructure.Persistence;
 using Asels.Assessment.Modules.Venues.Infrastructure.Utils;
@@ -20,6 +22,7 @@ builder.Logging.SetMinimumLevel(LogLevel.Information);
 
 builder.Services.AddMenusModule(builder.Configuration);
 builder.Services.AddVenuesModule(builder.Configuration);
+builder.Services.AddOrdersModule(builder.Configuration);
 
 var app = builder.Build();
 
@@ -38,5 +41,6 @@ app.UseExceptionHandler();
 
 app.MapVenuesEndpoints();
 app.MapMenusEndpoints();
+app.MapOrdersEndpoints();
 
 app.Run();

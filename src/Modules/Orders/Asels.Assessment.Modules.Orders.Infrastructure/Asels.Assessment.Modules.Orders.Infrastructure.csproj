@@ -7,14 +7,18 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Persistence\" />
-      <Folder Include="Repositories\" />
       <Folder Include="Services\" />
-      <Folder Include="Utils\" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.10" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Asels.Assessment.Modules.Orders.Application\Asels.Assessment.Modules.Orders.Application.csproj" />
+      <ProjectReference Include="..\Asels.Assessment.Modules.Orders.Domain\Asels.Assessment.Modules.Orders.Domain.csproj" />
     </ItemGroup>
 
 </Project>

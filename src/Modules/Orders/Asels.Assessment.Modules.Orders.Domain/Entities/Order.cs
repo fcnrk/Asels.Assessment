@@ -5,13 +5,11 @@ namespace Asels.Assessment.Modules.Orders.Domain.Entities;
 public sealed class Order
 {
     public Guid Id { get; set; } = Guid.NewGuid();
-    public Guid RestaurantId { get; set; }
-    public Guid MenuId { get; set; }
-    public string Day { get; set; } = default!;
-    public string CustomerName { get; set; } = default!;
-    public Guid CreatedByUserId { get; set; }
-    public OrderStatus Status { get; set; } = OrderStatus.Created;
+    public Guid VenueId { get; set; }
+    public string? Username { get; set; }
+    public DateOnly OrderDate { get; set; }
+    public OrderStatus Status { get; private set; } = OrderStatus.Created;
     public List<OrderItem> Items { get; set; } = new();
-    public decimal TotalAmount { get; set; }
+    public decimal Total => Items.Sum(i => i.UnitPrice * i.Quantity);
     public DateTime CreatedUtc { get; set; } = DateTime.UtcNow;
 }
