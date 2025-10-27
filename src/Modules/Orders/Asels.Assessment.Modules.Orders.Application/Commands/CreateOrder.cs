@@ -51,7 +51,7 @@ public static class CreateOrder
                     .ToList();
 
                 if (invalid.Count > 0)
-                    throw new InvalidOperationException("One or more menu items are not in the active menu for that day.");
+                    throw new InvalidOperationException($"One or more menu items are not in the active menu for that day. ({string.Join(", ", invalid)})");
 
                 var order = new Order
                 {

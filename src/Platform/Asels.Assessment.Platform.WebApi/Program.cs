@@ -6,6 +6,7 @@ using Asels.Assessment.Modules.Orders.Infrastructure.Utils;
 using Asels.Assessment.Modules.Venues.Api;
 using Asels.Assessment.Modules.Venues.Infrastructure.Persistence;
 using Asels.Assessment.Modules.Venues.Infrastructure.Utils;
+using Asels.Assessment.Platform.WebApi.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +27,8 @@ builder.Services.AddOrdersModule(builder.Configuration);
 
 var app = builder.Build();
 
+app.UseMiddleware<GlobalExceptionMiddleware>();
+
 // for HasData() to work
 using (var scope = app.Services.CreateScope())
 {
@@ -37,7 +40,6 @@ using (var scope = app.Services.CreateScope())
 
 app.MapSwagger();
 app.UseSwaggerUI();
-app.UseExceptionHandler();
 
 app.MapVenuesEndpoints();
 app.MapMenusEndpoints();
