@@ -8,13 +8,18 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8"/>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Include="..\..\..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Modules\Venues\Asels.Assessment.Modules.Venues.Api\Asels.Assessment.Modules.Venues.Api.csproj" />
+      <ProjectReference Include="..\..\Modules\Venues\Asels.Assessment.Modules.Venues.Infrastructure\Asels.Assessment.Modules.Venues.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

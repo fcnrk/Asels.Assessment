@@ -5,7 +5,7 @@ namespace Asels.Assessment.Modules.Venues.Infrastructure.Persistence;
 
 public class VenuesDbContext(DbContextOptions<VenuesDbContext> options) : DbContext(options)
 {
-    public DbSet<Venue> Restaurants => Set<Venue>();
+    public DbSet<Venue> Venues => Set<Venue>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
