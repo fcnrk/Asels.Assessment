@@ -9,13 +9,21 @@
 
     <ItemGroup>
         <PackageReference Include="coverlet.collector" Version="6.0.2"/>
+        <PackageReference Include="FluentAssertions" Version="8.8.0" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0"/>
+        <PackageReference Include="Moq" Version="4.20.72" />
         <PackageReference Include="xunit" Version="2.9.2"/>
         <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2"/>
     </ItemGroup>
 
     <ItemGroup>
         <Using Include="Xunit"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\src\Modules\Menus\Asels.Assessment.Modules.Menus.Application\Asels.Assessment.Modules.Menus.Application.csproj" />
+      <ProjectReference Include="..\..\..\src\Modules\Menus\Asels.Assessment.Modules.Menus.Infrastructure\Asels.Assessment.Modules.Menus.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\Common\Asels.Assessment.Tests.Common\Asels.Assessment.Tests.Common.csproj" />
     </ItemGroup>
 
 </Project>

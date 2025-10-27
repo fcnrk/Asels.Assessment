@@ -4,10 +4,11 @@ namespace Asels.Assessment.Modules.Menus.Application.Interfaces;
 
 public interface IMenuRepository
 {
-    Task<Menu?> GetActiveByRestaurantAndDayAsync(Guid restaurantId, DayOfWeek day, CancellationToken ct);
-    Task AddAsync(Menu menu, CancellationToken ct);
-    Task UpdateAsync(Menu menu, CancellationToken ct);
-    Task DeactivateOtherMenusAsync(Guid restaurantId, DayOfWeek day, Guid excludeId, CancellationToken ct);
-    Task RemoveAsync(Menu menu, CancellationToken ct);
-    Task SaveChangesAsync(CancellationToken ct);
+    Task<Menu?> GetActiveByVenueAndDayAsync(Guid venueId, DayOfWeek day, CancellationToken ct);
+    Task<Menu?> GetByIdAsync(Guid id, CancellationToken ct);
+    Task<Menu> AddAsync(Menu menu, CancellationToken ct);
+    Task<Menu> UpdateAsync(Menu menu, CancellationToken ct);
+    Task<bool> DeleteAsync(Guid id, CancellationToken ct);
+    Task<bool> DeactivateOtherMenusAsync(Guid venueId, DayOfWeek day, Guid excludeId, CancellationToken ct);
+    Task<int> SaveChangesAsync(CancellationToken ct);
 }

@@ -23,6 +23,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\src\Modules\Venues\Asels.Assessment.Modules.Venues.Application\Asels.Assessment.Modules.Venues.Application.csproj" />
+      <ProjectReference Include="..\..\Common\Asels.Assessment.Tests.Common\Asels.Assessment.Tests.Common.csproj" />
     </ItemGroup>
 
 </Project>

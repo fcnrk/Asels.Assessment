@@ -18,6 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Modules\Menus\Asels.Assessment.Modules.Menus.Api\Asels.Assessment.Modules.Menus.Api.csproj" />
+      <ProjectReference Include="..\..\Modules\Menus\Asels.Assessment.Modules.Menus.Infrastructure\Asels.Assessment.Modules.Menus.Infrastructure.csproj" />
       <ProjectReference Include="..\..\Modules\Venues\Asels.Assessment.Modules.Venues.Api\Asels.Assessment.Modules.Venues.Api.csproj" />
       <ProjectReference Include="..\..\Modules\Venues\Asels.Assessment.Modules.Venues.Infrastructure\Asels.Assessment.Modules.Venues.Infrastructure.csproj" />
     </ItemGroup>

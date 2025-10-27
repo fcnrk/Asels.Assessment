@@ -1,4 +1,5 @@
 ﻿using Asels.Assessment.Modules.Menus.Application.Interfaces;
+using Asels.Assessment.Modules.Menus.Domain.Entities;
 using Asels.Assessment.Modules.Menus.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,40 +7,38 @@ namespace Asels.Assessment.Modules.Menus.Infrastructure.Repositories;
 
 public sealed class MenuRepository(MenusDbContext db) : IMenuRepository
 {
-    public async Task<Domain.Entities.Menu?> GetActiveByRestaurantAndDayAsync(Guid restaurantId, DayOfWeek day, CancellationToken ct)
-    {
-        return await db.Menus
+    public async Task<Menu?> GetActiveByVenueAndDayAsync(Guid venueId, DayOfWeek day, CancellationToken ct)
+        => await db.Menus
             .Include(m => m.Entries)
             .ThenInclude(e => e.MenuItem)
-            .FirstOrDefaultAsync(m => m.RestaurantId == restaurantId && m.Day == day && m.IsActive, ct);
-    }
+            .FirstOrDefaultAsync(m => m.VenueId == venueId && m.Day == day && m.IsActive, ct);
 
-    public async Task AddAsync(Domain.Entities.Menu menu, CancellationToken ct)
+    public Task<Menu?> GetByIdAsync(Guid id, CancellationToken ct)
+        => db.Menus.Include(m => m.Entries).FirstOrDefaultAsync(x => x.Id == id, ct);
+
+    public async Task<Menu> AddAsync(Menu menu, CancellationToken ct)
+        => (await db.Menus.AddAsync(menu, ct)).Entity;
+
+    public Task<Menu> UpdateAsync(Menu menu, CancellationToken ct)
+        => Task.FromResult(db.Menus.Update(menu).Entity);
+
+    public async Task<bool> DeleteAsync(Guid id, CancellationToken ct)
     {
-        await db.Menus.AddAsync(menu, ct);
+        var existing = await db.Menus.FirstOrDefaultAsync(x => x.Id == id, ct);
+        if (existing is null) return false;
+        db.Menus.Remove(existing);
+        return true;
     }
 
-    public Task UpdateAsync(Domain.Entities.Menu menu, CancellationToken ct)
-    {
-        db.Menus.Update(menu);
-        return Task.CompletedTask;
-    }
-
-    public async Task DeactivateOtherMenusAsync(Guid restaurantId, DayOfWeek day, Guid excludeMenuId, CancellationToken ct)
+    public async Task<bool> DeactivateOtherMenusAsync(Guid venueId, DayOfWeek day, Guid exceptMenuId, CancellationToken ct)
     {
         var others = await db.Menus
-            .Where(m => m.RestaurantId == restaurantId && m.Day == day && m.Id != excludeMenuId && m.IsActive)
+            .Where(m => m.VenueId == venueId && m.Day == day && m.Id != exceptMenuId && m.IsActive)
             .ToListAsync(ct);
 
-        foreach (var o in others)
-            o.IsActive = false;
+        foreach (var o in others) o.IsActive = false;
+        return true;
     }
 
-    public Task RemoveAsync(Domain.Entities.Menu menu, CancellationToken ct)
-    {
-        db.Menus.Remove(menu);
-        return Task.CompletedTask;
-    }
-
-    public Task SaveChangesAsync(CancellationToken ct) => db.SaveChangesAsync(ct);
+    public Task<int> SaveChangesAsync(CancellationToken ct) => db.SaveChangesAsync(ct);
 }

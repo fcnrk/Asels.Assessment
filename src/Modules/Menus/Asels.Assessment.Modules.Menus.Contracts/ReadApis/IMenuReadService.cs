@@ -4,6 +4,6 @@ namespace Asels.Assessment.Modules.Menus.Contracts.ReadApis;
 
 public interface IMenuReadService
 {
-    Task<MenuDto?> GetActiveByRestaurantAndDayAsync(Guid restaurantId, DayOfWeek day, CancellationToken ct);
-    Task<IReadOnlyList<MenuDto>> GetAllByRestaurantAsync(Guid restaurantId, CancellationToken ct);
+    Task<MenuDto?> GetActiveByVenueAndDayAsync(Guid venueId, DayOfWeek day, CancellationToken ct);
+    Task<IReadOnlyList<MenuDto>> GetAllByVenueAsync(Guid venueId, CancellationToken ct);
 }

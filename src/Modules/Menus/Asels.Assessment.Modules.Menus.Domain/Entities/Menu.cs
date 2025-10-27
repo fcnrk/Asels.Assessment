@@ -2,8 +2,17 @@
 
 public sealed class Menu
 {
+    public Menu()
+    {
+    }
+
+    public Menu(Guid id)
+    {
+        Id = id;
+    }
+
     public Guid Id { get; set; } = Guid.NewGuid();
-    public Guid RestaurantId { get; set; }
+    public Guid VenueId { get; set; }
     public DayOfWeek Day { get; set; }
     public bool IsActive { get; set; } = true;
     public List<MenuEntry> Entries { get; set; } = new();

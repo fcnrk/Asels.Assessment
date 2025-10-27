@@ -1,6 +1,7 @@
 ﻿using Asels.Assessment.Modules.Venues.Application.Commands;
 using Asels.Assessment.Modules.Venues.Application.Interfaces;
 using Asels.Assessment.Modules.Venues.Domain.Entities;
+using Asels.Assessment.Tests.Common;
 using Moq;
 using FluentAssertions;
 

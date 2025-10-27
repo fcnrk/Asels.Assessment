@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Moq;
 
-namespace Asels.Assessment.Modules.Venues.UnitTests;
+namespace Asels.Assessment.Tests.Common;
 
 public static class MockLogger
 {
