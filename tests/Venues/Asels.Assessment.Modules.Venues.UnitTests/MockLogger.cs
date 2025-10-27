@@ -1,6 +1,9 @@
-﻿namespace Asels.Assessment.Modules.Venues.UnitTests;
+﻿using Microsoft.Extensions.Logging;
+using Moq;
 
-public class MockLogger
+namespace Asels.Assessment.Modules.Venues.UnitTests;
+
+public static class MockLogger
 {
-    
+    public static ILogger<T> Create<T>() => new Mock<ILogger<T>>().Object;
 }
